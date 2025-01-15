@@ -1,0 +1,1 @@
+device(lsi,INST_IO,devsr570Version,"sr570 version")

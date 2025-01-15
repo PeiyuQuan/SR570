@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-11-25 21:23:14 by specadm-->
+<display version="2.0.0">
+  <name>SR570</name>
+  <x>962</x>
+  <y>635</y>
+  <width>570</width>
+  <height>205</height>
+  <background_color>
+    <color red="218" green="218" blue="218">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_color>
+    <color name="Background" red="255" green="255" blue="255">
+    </color>
+  </grid_color>
+  <grid_step_x>5</grid_step_x>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #6</name>
+    <x>270</x>
+    <width>260</width>
+    <height>22</height>
+    <line_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #12</name>
+    <text>SR570 CURRENT PREAMPLIFIER</text>
+    <x>260</x>
+    <y>5</y>
+    <width>250</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #18</name>
+    <pv_name>$(TITLE)</pv_name>
+    <x>10</x>
+    <width>255</width>
+    <height>22</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <wrap_words>true</wrap_words>
+    <multi_line>true</multi_line>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #25</name>
+    <text>lowpass 3dB freq.</text>
+    <x>160</x>
+    <y>57</y>
+    <width>90</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #28</name>
+    <text>highpass 3dB freq.</text>
+    <x>160</x>
+    <y>97</y>
+    <width>90</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #35</name>
+    <pv_name>$(P)$(M)Filter:Low-Sel</pv_name>
+    <x>160</x>
+    <y>77</y>
+    <width>90</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #42</name>
+    <pv_name>$(P)$(M)Filter:High-Sel</pv_name>
+    <x>160</x>
+    <y>117</y>
+    <width>90</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #51</name>
+    <actions>
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M)Rst:All-Cmd</pv_name>
+    <text>DEFAULT</text>
+    <x>370</x>
+    <y>90</y>
+    <width>65</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #54</name>
+    <text>SENSITIVITY</text>
+    <x>355</x>
+    <y>112</y>
+    <width>90</width>
+    <foreground_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #57</name>
+    <x>453</x>
+    <y>80</y>
+    <width>5</width>
+    <height>75</height>
+    <points>
+      <point x="2.0" y="1.111111111111111">
+      </point>
+      <point x="2.0" y="73.33333333333333">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #61</name>
+    <x>325</x>
+    <y>22</y>
+    <width>5</width>
+    <height>174</height>
+    <points>
+      <point x="2.0" y="2.0">
+      </point>
+      <point x="2.0" y="171.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #69</name>
+    <x>320</x>
+    <y>74</y>
+    <width>151</width>
+    <height>10</height>
+    <points>
+      <point x="5.0" y="5.0">
+      </point>
+      <point x="146.0" y="5.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #77</name>
+    <x>448</x>
+    <y>144</y>
+    <width>120</width>
+    <height>10</height>
+    <points>
+      <point x="6.06060606060606" y="5.0">
+      </point>
+      <point x="113.93939393939392" y="5.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #81</name>
+    <y>22</y>
+    <width>5</width>
+    <height>178</height>
+    <points>
+      <point x="2.0" y="2.0">
+      </point>
+      <point x="2.0" y="175.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #85</name>
+    <y>95</y>
+    <width>108</width>
+    <height>8</height>
+    <points>
+      <point x="0.0" y="4.0">
+      </point>
+      <point x="99.69230769230771" y="4.0">
+      </point>
+    </points>
+    <line_width>8</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #98</name>
+    <text>BLANK</text>
+    <x>475</x>
+    <y>75</y>
+    <width>50</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #101</name>
+    <pv_name>$(P)$(M)Out:Blank-Sel</pv_name>
+    <x>460</x>
+    <y>100</y>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #104</name>
+    <text>BIAS VOLTAGE</text>
+    <x>10</x>
+    <y>22</y>
+    <width>80</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #107</name>
+    <pv_name>$(P)$(M)Bias-SP</pv_name>
+    <x>10</x>
+    <y>37</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #111</name>
+    <text>V</text>
+    <x>75</x>
+    <y>40</y>
+    <width>10</width>
+    <height>16</height>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #114</name>
+    <text>FILTER</text>
+    <x>125</x>
+    <y>22</y>
+    <width>125</width>
+    <height>14</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #117</name>
+    <pv_name>$(P)$(M)Filter-Sel</pv_name>
+    <x>110</x>
+    <y>37</y>
+    <width>140</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #120</name>
+    <y>199</y>
+    <width>570</width>
+    <height>5</height>
+    <points>
+      <point x="1.0674157303370788" y="2.0">
+      </point>
+      <point x="565.7303370786517" y="2.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #124</name>
+    <x>235</x>
+    <y>144</y>
+    <width>95</width>
+    <height>10</height>
+    <points>
+      <point x="4.3577981651376145" y="5.0">
+      </point>
+      <point x="90.64220183486239" y="5.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #128</name>
+    <x>560</x>
+    <y>22</y>
+    <width>5</width>
+    <height>180</height>
+    <points>
+      <point x="2.0" y="2.0224719101123596">
+      </point>
+      <point x="2.0" y="176.96629213483146">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #132</name>
+    <x>98</x>
+    <y>22</y>
+    <width>5</width>
+    <height>135</height>
+    <points>
+      <point x="2.0" y="2.0">
+      </point>
+      <point x="2.0" y="132.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #136</name>
+    <x>520</x>
+    <y>74</y>
+    <width>45</width>
+    <height>10</height>
+    <points>
+      <point x="5.357142857142857" y="5.0">
+      </point>
+      <point x="39.64285714285714" y="5.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #140</name>
+    <x>491</x>
+    <y>144</y>
+    <width>24</width>
+    <height>10</height>
+    <points>
+      <point x="5.0" y="5.0">
+      </point>
+      <point x="19.0" y="5.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #148</name>
+    <y>24</y>
+    <width>14</width>
+    <height>10</height>
+    <points>
+      <point x="3.0" y="5.0">
+      </point>
+      <point x="7.0" y="5.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #152</name>
+    <x>92</x>
+    <y>24</y>
+    <width>73</width>
+    <height>2</height>
+    <points>
+      <point x="4.74025974025974" y="1.0">
+      </point>
+      <point x="68.25974025974025" y="1.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #156</name>
+    <x>209</x>
+    <y>24</y>
+    <width>370</width>
+    <height>1</height>
+    <points>
+      <point x="13.309352517985609" y="0.5">
+      </point>
+      <point x="356.6906474820143" y="0.5">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>polyline #160</name>
+    <x>94</x>
+    <y>144</y>
+    <width>43</width>
+    <height>10</height>
+    <points>
+      <point x="5.0" y="5.0">
+      </point>
+      <point x="38.0" y="5.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>message button #164</name>
+    <actions>
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(M)Rst:Filter-Cmd</pv_name>
+    <text>RESET</text>
+    <x>255</x>
+    <y>37</y>
+    <width>50</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #174</name>
+    <x>330</x>
+    <y>114</y>
+    <width>25</width>
+    <height>10</height>
+    <line_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="133" green="133" blue="133">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>rectangle #177</name>
+    <x>445</x>
+    <y>114</y>
+    <width>10</width>
+    <height>10</height>
+    <line_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="120" green="120" blue="120">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #180</name>
+    <pv_name>$(P)$(M)Mode:Cal-Sel</pv_name>
+    <x>350</x>
+    <y>129</y>
+    <width>90</width>
+    <height>20</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <selected_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </selected_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>text entry #183</name>
+    <pv_name>$(P)$(M)Gain:Fine-SP</pv_name>
+    <x>345</x>
+    <y>152</y>
+    <width>85</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #187</name>
+    <text>%</text>
+    <x>430</x>
+    <y>154</y>
+    <width>17</width>
+    <height>19</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="42" green="99" blue="228">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #190</name>
+    <pv_name>$(P)$(M)Bias-Sel</pv_name>
+    <x>10</x>
+    <y>70</y>
+    <width>81</width>
+    <height>20</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <selected_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </selected_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #193</name>
+    <pv_name>$(P)$(M)Offset:Cal-Sel</pv_name>
+    <x>5</x>
+    <y>140</y>
+    <width>90</width>
+    <height>20</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <selected_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </selected_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>composite #196</name>
+    <x>7</x>
+    <y>110</y>
+    <width>87</width>
+    <height>26</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>composite #203</name>
+      <x>3</x>
+      <y>2</y>
+      <width>80</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textentry" version="3.0.0">
+        <name>text entry #206</name>
+        <pv_name>$(P)$(M)Offset:Fine-SP</pv_name>
+        <width>60</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="115" green="223" blue="255">
+          </color>
+        </background_color>
+        <format>1</format>
+        <show_units>false</show_units>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>text #210</name>
+        <text>%</text>
+        <x>63</x>
+        <width>17</width>
+        <height>19</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="42" green="99" blue="228">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #213</name>
+    <pv_name>$(P)$(M)Offset-Sel</pv_name>
+    <x>5</x>
+    <y>165</y>
+    <width>90</width>
+    <height>20</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <selected_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </selected_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>choice button #216</name>
+    <pv_name>$(P)$(M)Offset:Sign-Sel</pv_name>
+    <x>100</x>
+    <y>166</y>
+    <width>74</width>
+    <height>20</height>
+    <background_color>
+      <color red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <selected_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </selected_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>composite #219</name>
+    <x>175</x>
+    <y>166</y>
+    <width>140</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="combo" version="2.0.0">
+      <name>menu #222</name>
+      <pv_name>$(P)$(M)Offset:Val-SP</pv_name>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>menu #225</name>
+      <pv_name>$(P)$(M)Offset:Decade-SP</pv_name>
+      <x>55</x>
+      <width>90</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>composite #228</name>
+    <x>325</x>
+    <y>175</y>
+    <width>130</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="combo" version="2.0.0">
+      <name>menu #231</name>
+      <pv_name>$(P)$(M)Gain:Decade-SP</pv_name>
+      <x>75</x>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>menu #234</name>
+      <pv_name>$(P)$(M)Gain:Val-SP</pv_name>
+      <x>10</x>
+      <width>60</width>
+      <height>20</height>
+      <background_color>
+        <color red="115" green="223" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #95</name>
+    <pv_name>$(P)$(M)Out:Invert-Sel</pv_name>
+    <x>415</x>
+    <y>53</y>
+    <width>140</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>menu #45</name>
+    <pv_name>$(P)$(M)Mode:Gain-Sel</pv_name>
+    <x>415</x>
+    <y>30</y>
+    <width>140</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>text #92</name>
+    <text>INVERT</text>
+    <x>345</x>
+    <y>55</y>
+    <width>70</width>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <text>INPUT OFFSET</text>
+    <x>135</x>
+    <y>140</y>
+    <width>105</width>
+    <height>25</height>
+    <foreground_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <border_width>20</border_width>
+    <border_color>
+      <color red="0" green="0" blue="0" alpha="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>GAIN MODE</text>
+    <x>330</x>
+    <y>30</y>
+    <width>90</width>
+    <height>25</height>
+    <foreground_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <border_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>SR570_tiny.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>LESS</text>
+    <x>500</x>
+    <y>175</y>
+    <width>55</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="26" green="115" blue="9">
+      </color>
+    </background_color>
+  </widget>
+</display>

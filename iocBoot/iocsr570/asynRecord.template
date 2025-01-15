@@ -1,0 +1,6 @@
+file "$(ASYN)/db/asynRecord.db"
+{
+pattern
+{P          R         PORT    ADDR    OMAX  IMAX}
+{BL62:SR570:     asyn3   serial3    0     80  80}
+}
