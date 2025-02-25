@@ -55,7 +55,6 @@ sr570_DBD += drvAsynSerialPort.dbd
 sr570_DBD += calc.dbd
 sr570_DBD += stream-scalcout.dbd
 sr570_DBD += stream.dbd
-sr570_DBD += as.dbd
 sr570_DBD += asSupport.dbd
 
 
