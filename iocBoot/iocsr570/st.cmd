@@ -8,9 +8,6 @@
 cd "${TOP}"
 
 ## Register all support components
-dbLoadDatabase "dbd/sr570.dbd"
-sr570_registerRecordDeviceDriver pdbbase
-
 
 dbLoadDatabase "${TOP}/dbd/sr570.dbd"
 sr570_registerRecordDeviceDriver pdbbase
